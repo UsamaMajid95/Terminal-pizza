@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="desgin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Terminal-Pizze</title>   
+</head>
+
+<body>
+    <div class="container" >
+        <form action="" method="post">
+            <h1><b>Терминал Пиццы</b></h1>
+            <label for="pizze1">Пиццы</label>
+            <select name="pizze" id="pizze" class="form-control col-sm-8">
+                <option value="Пепперони">Пепперони</option>
+                <option value="Деревенская">Деревенская</option>
+                <option value="Гавайская">Гавайская</option>
+                <option value="Грибная">Грибная</option>
+            </select>
+            
+            <label for="size1">размер</label><br>
+            <select name="size" id="size" class="cls_select form-control col-sm-8"  multiple="multiple">
+                <option value="21cm">21cm</option>
+                <option value="26cm">26cm</option>
+                <option value="31cm">31cm</option>
+                <option value="45cm">45cm</option>
+            </select>
+            <br>
+            <label for="sauce1">Соусы</label><br>
+            <select name="coyc" id="coyc" class="cls_select js-example-basic-multiple form-control col-sm-8" multiple="multiple">
+                <option value="сырный">сырный</option>
+                <option value="кисло-сладкий">кисло-сладкий</option>
+                <option value="чесночный">чесночный</option>
+                <option value="барбекю">барбекю</option>
+            </select>
+            <br>
+            <br>
+            <button id="order" name="order" type="button">заказать</button><br>
+            <br>
+            <div class="alert alert-success " id="check"></div>
+        </form>
+        
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="form.js"></script>
+</body>
+</html>
